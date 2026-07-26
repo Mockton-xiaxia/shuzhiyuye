@@ -1,0 +1,3717 @@
+{
+  "GOV": [
+    {
+      "portal": "GOV",
+      "name": "工作台",
+      "group": "工作台",
+      "path": "/gov/workbench",
+      "shape": "workbench",
+      "api": "/todos",
+      "columns": [
+        {
+          "prop": "title",
+          "label": "标题"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        },
+        {
+          "prop": "bizType",
+          "label": "业务类型"
+        }
+      ],
+      "buttons": [
+        "refresh"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "待办列表",
+      "group": "工作台",
+      "path": "/gov/workbench/todos",
+      "shape": "workbench",
+      "api": "/todos",
+      "columns": [
+        {
+          "prop": "title",
+          "label": "标题"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        },
+        {
+          "prop": "bizType",
+          "label": "业务类型"
+        },
+        {
+          "prop": "linkPath",
+          "label": "链接"
+        }
+      ],
+      "buttons": [
+        "refresh"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "领导驾驶舱",
+      "group": "工作台",
+      "path": "/gov/cockpit",
+      "shape": "screen",
+      "api": "/analytics/cockpit",
+      "columns": [],
+      "buttons": [
+        "fullscreen"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "政策管理",
+      "group": "质量安全",
+      "path": "/gov/quality/policies",
+      "shape": "crud",
+      "api": "/quality/policies",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "fileName",
+          "label": "附件文件"
+        },
+        {
+          "prop": "publishDate",
+          "label": "发布日期"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "检测机构",
+      "group": "质量安全",
+      "path": "/gov/quality/labs",
+      "shape": "crud",
+      "api": "/quality/labs",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "labType",
+          "label": "检测类型"
+        },
+        {
+          "prop": "regionName",
+          "label": "所属区域"
+        },
+        {
+          "prop": "createdAt",
+          "label": "创建日期"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "质量抽检",
+      "group": "质量安全",
+      "path": "/gov/quality/inspections",
+      "shape": "crud",
+      "api": "/quality/inspections",
+      "columns": [
+        {
+          "prop": "year",
+          "label": "年度"
+        },
+        {
+          "prop": "quarter",
+          "label": "季度"
+        },
+        {
+          "prop": "level",
+          "label": "级别"
+        },
+        {
+          "prop": "enterpriseName",
+          "label": "主体"
+        },
+        {
+          "prop": "species",
+          "label": "品种"
+        },
+        {
+          "prop": "labName",
+          "label": "检测机构"
+        },
+        {
+          "prop": "result",
+          "label": "检测结果"
+        },
+        {
+          "prop": "unqualified",
+          "label": "不合格指标"
+        },
+        {
+          "prop": "inspectedAt",
+          "label": "抽检日期"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "质量整改",
+      "group": "质量安全",
+      "path": "/gov/quality/rectifications",
+      "shape": "crud",
+      "api": "/quality/rectifications",
+      "columns": [
+        {
+          "prop": "enterpriseName",
+          "label": "主体"
+        },
+        {
+          "prop": "species",
+          "label": "品种"
+        },
+        {
+          "prop": "labName",
+          "label": "检测机构"
+        },
+        {
+          "prop": "result",
+          "label": "检测结果"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "质量监管统计",
+      "group": "质量安全",
+      "path": "/gov/quality/stats-mgmt",
+      "shape": "crud",
+      "api": "/quality/stats-records",
+      "columns": [
+        {
+          "prop": "year",
+          "label": "年度"
+        },
+        {
+          "prop": "quarter",
+          "label": "季度"
+        },
+        {
+          "prop": "regionName",
+          "label": "所属区域"
+        },
+        {
+          "prop": "level",
+          "label": "级别"
+        },
+        {
+          "prop": "enterpriseCount",
+          "label": "抽检企业数"
+        },
+        {
+          "prop": "sampleCount",
+          "label": "抽检样品数"
+        },
+        {
+          "prop": "passCount",
+          "label": "合格样品数"
+        },
+        {
+          "prop": "failCount",
+          "label": "不合格样品数"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "标识审核",
+      "group": "追溯标识",
+      "path": "/gov/trace/applies",
+      "shape": "crud",
+      "api": "/trace/applies",
+      "columns": [
+        {
+          "prop": "enterpriseName",
+          "label": "主体"
+        },
+        {
+          "prop": "regionName",
+          "label": "所属区域"
+        },
+        {
+          "prop": "species",
+          "label": "品种"
+        },
+        {
+          "prop": "brand",
+          "label": "品牌"
+        },
+        {
+          "prop": "applyDate",
+          "label": "申请日期"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "标识分发",
+      "group": "追溯标识",
+      "path": "/gov/trace/codes",
+      "shape": "crud",
+      "api": "/trace/codes",
+      "columns": [
+        {
+          "prop": "adminCode",
+          "label": "行政编码"
+        },
+        {
+          "prop": "enterpriseName",
+          "label": "主体"
+        },
+        {
+          "prop": "regionName",
+          "label": "所属区域"
+        },
+        {
+          "prop": "serialCode",
+          "label": "养殖企业流水码"
+        },
+        {
+          "prop": "speciesCode",
+          "label": "品种代码"
+        },
+        {
+          "prop": "brand",
+          "label": "品牌"
+        },
+        {
+          "prop": "applyDate",
+          "label": "申请日期"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "标识统计查询",
+      "group": "追溯标识",
+      "path": "/gov/trace/label-stats",
+      "shape": "crud",
+      "api": "/trace/label-stats",
+      "columns": [
+        {
+          "prop": "labelCode",
+          "label": "追溯标签码"
+        },
+        {
+          "prop": "enterpriseName",
+          "label": "主体"
+        },
+        {
+          "prop": "species",
+          "label": "品种"
+        },
+        {
+          "prop": "customer",
+          "label": "销售客户"
+        },
+        {
+          "prop": "dest",
+          "label": "销售去向"
+        },
+        {
+          "prop": "saleDate",
+          "label": "销售日期"
+        },
+        {
+          "prop": "genDate",
+          "label": "生成日期"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "政策管理",
+      "group": "尾水监管",
+      "path": "/gov/effluent/policies",
+      "shape": "crud",
+      "api": "/effluent/policies",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "scope",
+          "label": "政策适用范围"
+        },
+        {
+          "prop": "publishDate",
+          "label": "发布日期"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "排放水域",
+      "group": "尾水监管",
+      "path": "/gov/effluent/waters",
+      "shape": "crud",
+      "api": "/effluent/waters",
+      "columns": [
+        {
+          "prop": "enterpriseName",
+          "label": "主体"
+        },
+        {
+          "prop": "subjectType",
+          "label": "主体类型"
+        },
+        {
+          "prop": "regionName",
+          "label": "所属区域"
+        },
+        {
+          "prop": "zone",
+          "label": "水域分区"
+        },
+        {
+          "prop": "level",
+          "label": "级别"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "尾水排放计划",
+      "group": "尾水监管",
+      "path": "/gov/effluent/plans",
+      "shape": "crud",
+      "api": "/effluent/plans",
+      "columns": [
+        {
+          "prop": "county",
+          "label": "区县"
+        },
+        {
+          "prop": "township",
+          "label": "乡镇"
+        },
+        {
+          "prop": "village",
+          "label": "村"
+        },
+        {
+          "prop": "enterpriseName",
+          "label": "主体"
+        },
+        {
+          "prop": "zone",
+          "label": "水域分区"
+        },
+        {
+          "prop": "planTime",
+          "label": "计划排放时间"
+        },
+        {
+          "prop": "fileDate",
+          "label": "备案日期"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "养殖主体",
+      "group": "主体资源",
+      "path": "/gov/party/enterprises",
+      "shape": "crud",
+      "api": "/party/enterprises",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "subjectType",
+          "label": "主体类型"
+        },
+        {
+          "prop": "regionName",
+          "label": "所属区域"
+        },
+        {
+          "prop": "projectName",
+          "label": "所属项目"
+        },
+        {
+          "prop": "areaMu",
+          "label": "养殖面积（亩）"
+        },
+        {
+          "prop": "species",
+          "label": "品种"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "用户管理",
+      "group": "主体资源",
+      "path": "/gov/party/users",
+      "shape": "crud",
+      "api": "/system/users",
+      "columns": [
+        {
+          "prop": "username",
+          "label": "登录名"
+        },
+        {
+          "prop": "realName",
+          "label": "真实姓名"
+        },
+        {
+          "prop": "mobile",
+          "label": "手机号"
+        },
+        {
+          "prop": "roleName",
+          "label": "角色"
+        },
+        {
+          "prop": "orgName",
+          "label": "主体/单位"
+        },
+        {
+          "prop": "projectName",
+          "label": "所属项目"
+        },
+        {
+          "prop": "source",
+          "label": "来源"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "塘口信息采集",
+      "group": "主体资源",
+      "path": "/gov/party/gis-collect",
+      "shape": "gis",
+      "api": "/party/gis/layers",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "auditStatus",
+          "label": "审核状态"
+        },
+        {
+          "prop": "areaMu",
+          "label": "养殖面积（亩）"
+        },
+        {
+          "prop": "species",
+          "label": "品种"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "渔业信息审核",
+      "group": "主体资源",
+      "path": "/gov/party/gis-audit",
+      "shape": "gis",
+      "api": "/party/gis/layers",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "auditStatus",
+          "label": "审核状态"
+        },
+        {
+          "prop": "enterpriseName",
+          "label": "主体"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "渔业资源统计",
+      "group": "主体资源",
+      "path": "/gov/party/gis-stats",
+      "shape": "gis",
+      "api": "/party/gis/layers",
+      "columns": [],
+      "buttons": [
+        "query",
+        "reset"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "病害检测管理",
+      "group": "大鲵专项",
+      "path": "/gov/specialty/disease-test",
+      "shape": "crud",
+      "api": "/specialty/disease-tests",
+      "columns": [
+        {
+          "prop": "applyNo",
+          "label": "申请编号"
+        },
+        {
+          "prop": "applyDate",
+          "label": "申请日期"
+        },
+        {
+          "prop": "applicant",
+          "label": "申请人"
+        },
+        {
+          "prop": "sampleSource",
+          "label": "样本来源"
+        },
+        {
+          "prop": "purpose",
+          "label": "目的"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "育种驯化管理",
+      "group": "大鲵专项",
+      "path": "/gov/specialty/domestication",
+      "shape": "domestication",
+      "api": "/specialty/domestication/stats",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "areaMu",
+          "label": "养殖面积（亩）"
+        },
+        {
+          "prop": "species",
+          "label": "品种"
+        },
+        {
+          "prop": "cost",
+          "label": "成本"
+        },
+        {
+          "prop": "yieldKg",
+          "label": "产量"
+        },
+        {
+          "prop": "profit",
+          "label": "利润"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "无人机巡查",
+      "group": "无人机巡查",
+      "path": "/gov/uav/patrol",
+      "shape": "uav",
+      "api": "/uav/stats",
+      "columns": [],
+      "buttons": [
+        "query",
+        "reset",
+        "create"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "资讯类别",
+      "group": "产业资讯",
+      "path": "/gov/cms/categories",
+      "shape": "crud",
+      "api": "/cms/categories",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "sortNo",
+          "label": "排序"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "文章资讯",
+      "group": "产业资讯",
+      "path": "/gov/cms/articles",
+      "shape": "crud",
+      "api": "/cms/articles",
+      "columns": [
+        {
+          "prop": "title",
+          "label": "标题"
+        },
+        {
+          "prop": "category",
+          "label": "类别"
+        },
+        {
+          "prop": "recommend",
+          "label": "首页推荐"
+        },
+        {
+          "prop": "views",
+          "label": "阅读量"
+        },
+        {
+          "prop": "source",
+          "label": "来源"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "视频资讯",
+      "group": "产业资讯",
+      "path": "/gov/cms/videos",
+      "shape": "crud",
+      "api": "/cms/videos",
+      "columns": [
+        {
+          "prop": "title",
+          "label": "标题"
+        },
+        {
+          "prop": "category",
+          "label": "类别"
+        },
+        {
+          "prop": "url",
+          "label": "链接"
+        },
+        {
+          "prop": "views",
+          "label": "阅读量"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "市场管理",
+      "group": "产业资讯",
+      "path": "/gov/supply/markets",
+      "shape": "crud",
+      "api": "/supply/markets",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "region",
+          "label": "区域"
+        },
+        {
+          "prop": "lng",
+          "label": "经度"
+        },
+        {
+          "prop": "lat",
+          "label": "纬度"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "行情归集",
+      "group": "产业资讯",
+      "path": "/gov/supply/prices",
+      "shape": "crud",
+      "api": "/supply/prices",
+      "columns": [
+        {
+          "prop": "species",
+          "label": "品种"
+        },
+        {
+          "prop": "spec",
+          "label": "规格"
+        },
+        {
+          "prop": "price",
+          "label": "价格"
+        },
+        {
+          "prop": "unit",
+          "label": "单位"
+        },
+        {
+          "prop": "marketId",
+          "label": "市场"
+        },
+        {
+          "prop": "priceDate",
+          "label": "归集日期"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "苗种供应",
+      "group": "产业资讯",
+      "path": "/gov/supply/seed",
+      "shape": "crud",
+      "api": "/supply/listings?category=SEED",
+      "columns": [
+        {
+          "prop": "title",
+          "label": "标题"
+        },
+        {
+          "prop": "brand",
+          "label": "品牌"
+        },
+        {
+          "prop": "supplierName",
+          "label": "供应商"
+        },
+        {
+          "prop": "contact",
+          "label": "联系人"
+        },
+        {
+          "prop": "phone",
+          "label": "电话"
+        },
+        {
+          "prop": "region",
+          "label": "区域"
+        },
+        {
+          "prop": "price",
+          "label": "价格"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "饲料供应",
+      "group": "产业资讯",
+      "path": "/gov/supply/feed",
+      "shape": "crud",
+      "api": "/supply/listings?category=FEED",
+      "columns": [
+        {
+          "prop": "title",
+          "label": "标题"
+        },
+        {
+          "prop": "brand",
+          "label": "品牌"
+        },
+        {
+          "prop": "supplierName",
+          "label": "供应商"
+        },
+        {
+          "prop": "contact",
+          "label": "联系人"
+        },
+        {
+          "prop": "phone",
+          "label": "电话"
+        },
+        {
+          "prop": "region",
+          "label": "区域"
+        },
+        {
+          "prop": "price",
+          "label": "价格"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "渔药供应",
+      "group": "产业资讯",
+      "path": "/gov/supply/medicine",
+      "shape": "crud",
+      "api": "/supply/listings?category=MEDICINE",
+      "columns": [
+        {
+          "prop": "title",
+          "label": "标题"
+        },
+        {
+          "prop": "brand",
+          "label": "品牌"
+        },
+        {
+          "prop": "supplierName",
+          "label": "供应商"
+        },
+        {
+          "prop": "contact",
+          "label": "联系人"
+        },
+        {
+          "prop": "phone",
+          "label": "电话"
+        },
+        {
+          "prop": "region",
+          "label": "区域"
+        },
+        {
+          "prop": "price",
+          "label": "价格"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "装备供应",
+      "group": "产业资讯",
+      "path": "/gov/supply/equip",
+      "shape": "crud",
+      "api": "/supply/listings?category=EQUIP",
+      "columns": [
+        {
+          "prop": "title",
+          "label": "标题"
+        },
+        {
+          "prop": "brand",
+          "label": "品牌"
+        },
+        {
+          "prop": "supplierName",
+          "label": "供应商"
+        },
+        {
+          "prop": "contact",
+          "label": "联系人"
+        },
+        {
+          "prop": "phone",
+          "label": "电话"
+        },
+        {
+          "prop": "region",
+          "label": "区域"
+        },
+        {
+          "prop": "price",
+          "label": "价格"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "GOV",
+      "name": "萤石云配置",
+      "group": "视频设备",
+      "path": "/gov/iot/ezviz",
+      "shape": "ezviz",
+      "api": "/iot/ezviz/config",
+      "columns": [],
+      "buttons": [
+        "query"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    }
+  ],
+  "ENT": [
+    {
+      "portal": "ENT",
+      "name": "工作台",
+      "group": "工作台",
+      "path": "/ent/workbench",
+      "shape": "workbench",
+      "api": "/todos",
+      "columns": [
+        {
+          "prop": "title",
+          "label": "标题"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        }
+      ],
+      "buttons": [
+        "refresh"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "待办列表",
+      "group": "工作台",
+      "path": "/ent/workbench/todos",
+      "shape": "workbench",
+      "api": "/todos",
+      "columns": [
+        {
+          "prop": "title",
+          "label": "标题"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        },
+        {
+          "prop": "bizType",
+          "label": "业务类型"
+        }
+      ],
+      "buttons": [
+        "refresh"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "企业大屏",
+      "group": "工作台",
+      "path": "/ent/screen",
+      "shape": "screen",
+      "api": "/analytics/enterprise-screen",
+      "columns": [],
+      "buttons": [
+        "fullscreen"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "标识申请",
+      "group": "质量追溯",
+      "path": "/ent/quality/trace-apply",
+      "shape": "crud",
+      "api": "/trace/applies",
+      "columns": [
+        {
+          "prop": "species",
+          "label": "品种"
+        },
+        {
+          "prop": "brand",
+          "label": "品牌"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        },
+        {
+          "prop": "applyDate",
+          "label": "申请日期"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "自主监管",
+      "group": "质量追溯",
+      "path": "/ent/quality/self-checks",
+      "shape": "crud",
+      "api": "/quality/self-checks",
+      "columns": [
+        {
+          "prop": "pondName",
+          "label": "塘口"
+        },
+        {
+          "prop": "species",
+          "label": "品种"
+        },
+        {
+          "prop": "sampleCount",
+          "label": "抽检样品数"
+        },
+        {
+          "prop": "labName",
+          "label": "检测机构"
+        },
+        {
+          "prop": "result",
+          "label": "检测结果"
+        },
+        {
+          "prop": "report",
+          "label": "检测报告"
+        },
+        {
+          "prop": "checkDate",
+          "label": "检测日期"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "政府监管",
+      "group": "质量追溯",
+      "path": "/ent/quality/gov-checks",
+      "shape": "crud",
+      "api": "/quality/inspections",
+      "columns": [
+        {
+          "prop": "year",
+          "label": "年度"
+        },
+        {
+          "prop": "quarter",
+          "label": "季度"
+        },
+        {
+          "prop": "level",
+          "label": "级别"
+        },
+        {
+          "prop": "species",
+          "label": "品种"
+        },
+        {
+          "prop": "labName",
+          "label": "检测机构"
+        },
+        {
+          "prop": "result",
+          "label": "检测结果"
+        },
+        {
+          "prop": "inspectedAt",
+          "label": "抽检日期"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "质量整改",
+      "group": "质量追溯",
+      "path": "/ent/quality/rectifications",
+      "shape": "crud",
+      "api": "/quality/rectifications",
+      "columns": [
+        {
+          "prop": "pondName",
+          "label": "塘口"
+        },
+        {
+          "prop": "species",
+          "label": "品种"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        },
+        {
+          "prop": "content",
+          "label": "内容"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "质量监管",
+      "group": "质量追溯",
+      "path": "/ent/quality/regulation",
+      "shape": "crud",
+      "api": "/quality/inspections",
+      "columns": [
+        {
+          "prop": "year",
+          "label": "年度"
+        },
+        {
+          "prop": "quarter",
+          "label": "季度"
+        },
+        {
+          "prop": "level",
+          "label": "级别"
+        },
+        {
+          "prop": "species",
+          "label": "品种"
+        },
+        {
+          "prop": "result",
+          "label": "检测结果"
+        },
+        {
+          "prop": "inspectedAt",
+          "label": "抽检日期"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "质量管理",
+      "group": "质量追溯",
+      "path": "/ent/quality/control",
+      "shape": "crud",
+      "api": "/quality/inspections",
+      "columns": [
+        {
+          "prop": "species",
+          "label": "品种"
+        },
+        {
+          "prop": "result",
+          "label": "检测结果"
+        },
+        {
+          "prop": "source",
+          "label": "来源"
+        },
+        {
+          "prop": "inspectedAt",
+          "label": "抽检日期"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "病情测报",
+      "group": "病害防疫",
+      "path": "/ent/sso/bqcb",
+      "shape": "sso",
+      "api": null,
+      "columns": [],
+      "buttons": [
+        "open"
+      ],
+      "ssoUrl": "http://60.165.239.173:9001/homepage/index",
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "水生动物疾病远程辅助诊断网",
+      "group": "病害防疫",
+      "path": "/ent/sso/diagnosis",
+      "shape": "sso",
+      "api": null,
+      "columns": [],
+      "buttons": [
+        "open"
+      ],
+      "ssoUrl": "http://60.165.239.173:9000/ffcportal",
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "巡检记录",
+      "group": "尾水环保",
+      "path": "/ent/effluent/patrols",
+      "shape": "crud",
+      "api": "/effluent/patrols",
+      "columns": [
+        {
+          "prop": "title",
+          "label": "标题"
+        },
+        {
+          "prop": "result",
+          "label": "检测结果"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        },
+        {
+          "prop": "createdAt",
+          "label": "创建日期"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "指挥调度记录",
+      "group": "尾水环保",
+      "path": "/ent/effluent/dispatches",
+      "shape": "crud",
+      "api": "/effluent/dispatches",
+      "columns": [
+        {
+          "prop": "title",
+          "label": "标题"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        },
+        {
+          "prop": "feedback",
+          "label": "反馈"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "整改记录",
+      "group": "尾水环保",
+      "path": "/ent/effluent/rectifications",
+      "shape": "crud",
+      "api": "/effluent/rectifications",
+      "columns": [
+        {
+          "prop": "title",
+          "label": "标题"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        },
+        {
+          "prop": "reply",
+          "label": "回复"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "塘口养殖",
+      "group": "养殖生产",
+      "path": "/ent/breeding/ponds",
+      "shape": "crud",
+      "api": "/party/ponds",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "species",
+          "label": "品种"
+        },
+        {
+          "prop": "areaMu",
+          "label": "养殖面积（亩）"
+        },
+        {
+          "prop": "auditStatus",
+          "label": "审核状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "养殖农事",
+      "group": "养殖生产",
+      "path": "/ent/breeding/activities",
+      "shape": "crud",
+      "api": "/breeding/activities",
+      "columns": [
+        {
+          "prop": "title",
+          "label": "标题"
+        },
+        {
+          "prop": "activityType",
+          "label": "农事类型"
+        },
+        {
+          "prop": "qty",
+          "label": "数量"
+        },
+        {
+          "prop": "unit",
+          "label": "单位"
+        },
+        {
+          "prop": "occurredAt",
+          "label": "发生时间"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "养殖批次统计",
+      "group": "养殖生产",
+      "path": "/ent/breeding/batches",
+      "shape": "crud",
+      "api": "/breeding/batches",
+      "columns": [
+        {
+          "prop": "pondName",
+          "label": "塘口"
+        },
+        {
+          "prop": "species",
+          "label": "品种"
+        },
+        {
+          "prop": "stockSpec",
+          "label": "投苗规格"
+        },
+        {
+          "prop": "stockQty",
+          "label": "投苗数量"
+        },
+        {
+          "prop": "stockDate",
+          "label": "投苗日期"
+        },
+        {
+          "prop": "endDate",
+          "label": "结束日期"
+        },
+        {
+          "prop": "days",
+          "label": "养殖天数"
+        },
+        {
+          "prop": "outSpec",
+          "label": "出苗规格"
+        },
+        {
+          "prop": "yieldKg",
+          "label": "产量"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "销售信息管理",
+      "group": "养殖生产",
+      "path": "/ent/breeding/sales",
+      "shape": "crud",
+      "api": "/breeding/sales",
+      "columns": [
+        {
+          "prop": "orderNo",
+          "label": "订单编号"
+        },
+        {
+          "prop": "species",
+          "label": "品种"
+        },
+        {
+          "prop": "customerName",
+          "label": "客户"
+        },
+        {
+          "prop": "orderType",
+          "label": "类型"
+        },
+        {
+          "prop": "amount",
+          "label": "金额"
+        },
+        {
+          "prop": "weightKg",
+          "label": "数量kg"
+        },
+        {
+          "prop": "soldAt",
+          "label": "日期"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "病害检测管理",
+      "group": "大鲵专项",
+      "path": "/ent/specialty/disease-test",
+      "shape": "crud",
+      "api": "/specialty/disease-tests",
+      "columns": [
+        {
+          "prop": "applyNo",
+          "label": "申请编号"
+        },
+        {
+          "prop": "applyDate",
+          "label": "申请日期"
+        },
+        {
+          "prop": "applicant",
+          "label": "申请人"
+        },
+        {
+          "prop": "sampleSource",
+          "label": "样本来源"
+        },
+        {
+          "prop": "purpose",
+          "label": "目的"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "加工管理",
+      "group": "大鲵专项",
+      "path": "/ent/specialty/processing",
+      "shape": "crud",
+      "api": "/specialty/processing",
+      "columns": [
+        {
+          "prop": "materialNo",
+          "label": "原料编号"
+        },
+        {
+          "prop": "purchaseDate",
+          "label": "采购日期"
+        },
+        {
+          "prop": "pondName",
+          "label": "塘口"
+        },
+        {
+          "prop": "weightKg",
+          "label": "数量kg"
+        },
+        {
+          "prop": "quarantineStatus",
+          "label": "检疫状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "养殖生产管理",
+      "group": "大鲵专项",
+      "path": "/ent/specialty/transport",
+      "shape": "crud",
+      "api": "/specialty/transports",
+      "columns": [
+        {
+          "prop": "transportNo",
+          "label": "运输编号"
+        },
+        {
+          "prop": "fromAddr",
+          "label": "起运地"
+        },
+        {
+          "prop": "toAddr",
+          "label": "目的地"
+        },
+        {
+          "prop": "tempC",
+          "label": "温度"
+        },
+        {
+          "prop": "durationH",
+          "label": "时长"
+        },
+        {
+          "prop": "sampleStatus",
+          "label": "抽检"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "育种驯化管理",
+      "group": "大鲵专项",
+      "path": "/ent/specialty/domestication",
+      "shape": "domestication",
+      "api": "/specialty/domestication/logs",
+      "columns": [
+        {
+          "prop": "date",
+          "label": "驯化日期"
+        },
+        {
+          "prop": "pondName",
+          "label": "塘口"
+        },
+        {
+          "prop": "feedType",
+          "label": "饵料类型"
+        },
+        {
+          "prop": "feedQty",
+          "label": "投喂量"
+        },
+        {
+          "prop": "effect",
+          "label": "效果"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "养殖主体信息",
+      "group": "我的基地",
+      "path": "/ent/base/enterprise",
+      "shape": "crud",
+      "api": "/party/enterprises",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "areaMu",
+          "label": "养殖面积（亩）"
+        },
+        {
+          "prop": "species",
+          "label": "品种"
+        },
+        {
+          "prop": "contactName",
+          "label": "联系人"
+        },
+        {
+          "prop": "contactPhone",
+          "label": "电话"
+        },
+        {
+          "prop": "address",
+          "label": "地址"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "塘口信息采集",
+      "group": "我的基地",
+      "path": "/ent/base/gis",
+      "shape": "gis",
+      "api": "/party/gis/layers",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "areaMu",
+          "label": "养殖面积（亩）"
+        },
+        {
+          "prop": "species",
+          "label": "品种"
+        },
+        {
+          "prop": "auditStatus",
+          "label": "审核状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "人员管理",
+      "group": "我的基地",
+      "path": "/ent/base/staffs",
+      "shape": "crud",
+      "api": "/party/staffs",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "phone",
+          "label": "电话"
+        },
+        {
+          "prop": "gender",
+          "label": "性别"
+        },
+        {
+          "prop": "post",
+          "label": "岗位"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "苗种信息来源",
+      "group": "投入品",
+      "path": "/ent/inputs/seed-info",
+      "shape": "crud",
+      "api": "/inputs/items?category=SEED",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "spec",
+          "label": "规格"
+        },
+        {
+          "prop": "fcr",
+          "label": "饵料系数"
+        },
+        {
+          "prop": "image",
+          "label": "图片"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "饲料信息来源",
+      "group": "投入品",
+      "path": "/ent/inputs/feed-info",
+      "shape": "crud",
+      "api": "/inputs/items?category=FEED",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "spec",
+          "label": "规格"
+        },
+        {
+          "prop": "fcr",
+          "label": "饵料系数"
+        },
+        {
+          "prop": "image",
+          "label": "图片"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "渔药信息来源",
+      "group": "投入品",
+      "path": "/ent/inputs/medicine-info",
+      "shape": "crud",
+      "api": "/inputs/items?category=MEDICINE",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "spec",
+          "label": "规格"
+        },
+        {
+          "prop": "prescription",
+          "label": "是否处方药"
+        },
+        {
+          "prop": "ingredient",
+          "label": "成分"
+        },
+        {
+          "prop": "image",
+          "label": "图片"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "苗种供应商",
+      "group": "投入品",
+      "path": "/ent/inputs/seed-supplier",
+      "shape": "crud",
+      "api": "/inputs/suppliers?category=SEED",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "contact",
+          "label": "联系人"
+        },
+        {
+          "prop": "phone",
+          "label": "电话"
+        },
+        {
+          "prop": "address",
+          "label": "地址"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "饲料供应商",
+      "group": "投入品",
+      "path": "/ent/inputs/feed-supplier",
+      "shape": "crud",
+      "api": "/inputs/suppliers?category=FEED",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "contact",
+          "label": "联系人"
+        },
+        {
+          "prop": "phone",
+          "label": "电话"
+        },
+        {
+          "prop": "address",
+          "label": "地址"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "渔药供应商",
+      "group": "投入品",
+      "path": "/ent/inputs/medicine-supplier",
+      "shape": "crud",
+      "api": "/inputs/suppliers?category=MEDICINE",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "contact",
+          "label": "联系人"
+        },
+        {
+          "prop": "phone",
+          "label": "电话"
+        },
+        {
+          "prop": "address",
+          "label": "地址"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "设备策略管理",
+      "group": "物联中心",
+      "path": "/ent/iot/rules",
+      "shape": "crud",
+      "api": "/iot/rules",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "deviceName",
+          "label": "设备名称"
+        },
+        {
+          "prop": "pointCode",
+          "label": "参数"
+        },
+        {
+          "prop": "operator",
+          "label": "条件"
+        },
+        {
+          "prop": "threshold",
+          "label": "阈值"
+        },
+        {
+          "prop": "enabled",
+          "label": "启用"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "设备控制",
+      "group": "物联中心",
+      "path": "/ent/iot/control",
+      "shape": "crud",
+      "api": "/iot/commands",
+      "columns": [
+        {
+          "prop": "deviceId",
+          "label": "设备"
+        },
+        {
+          "prop": "command",
+          "label": "指令"
+        },
+        {
+          "prop": "result",
+          "label": "检测结果"
+        },
+        {
+          "prop": "detail",
+          "label": "详情"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "视频监控",
+      "group": "物联中心",
+      "path": "/ent/iot/cameras",
+      "shape": "crud",
+      "api": "/iot/cameras",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "deviceSerial",
+          "label": "序列号"
+        },
+        {
+          "prop": "channelNo",
+          "label": "通道"
+        },
+        {
+          "prop": "scene",
+          "label": "场景"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "萤石云配置",
+      "group": "物联中心",
+      "path": "/ent/iot/ezviz",
+      "shape": "ezviz",
+      "api": "/iot/ezviz/config",
+      "columns": [],
+      "buttons": [
+        "query"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "水质监测",
+      "group": "物联中心",
+      "path": "/ent/iot/water-monitor",
+      "shape": "crud",
+      "api": "/iot/telemetry",
+      "columns": [
+        {
+          "prop": "deviceId",
+          "label": "设备"
+        },
+        {
+          "prop": "pointCode",
+          "label": "参数"
+        },
+        {
+          "prop": "value",
+          "label": "数值"
+        },
+        {
+          "prop": "unit",
+          "label": "单位"
+        },
+        {
+          "prop": "collectedAt",
+          "label": "采集时间"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "水质数据",
+      "group": "物联中心",
+      "path": "/ent/iot/water-data",
+      "shape": "crud",
+      "api": "/iot/water-lab",
+      "columns": [
+        {
+          "prop": "permanganate",
+          "label": "高锰酸盐"
+        },
+        {
+          "prop": "nitrite",
+          "label": "亚硝酸盐"
+        },
+        {
+          "prop": "ammonia",
+          "label": "氨氮"
+        },
+        {
+          "prop": "alkalinity",
+          "label": "碱度"
+        },
+        {
+          "prop": "salinity",
+          "label": "盐度"
+        },
+        {
+          "prop": "ss",
+          "label": "悬浮物"
+        },
+        {
+          "prop": "flagellate",
+          "label": "鞭藻"
+        },
+        {
+          "prop": "diatom",
+          "label": "硅藻"
+        },
+        {
+          "prop": "cyanobacteria",
+          "label": "蓝藻"
+        },
+        {
+          "prop": "protozoa",
+          "label": "原生动物"
+        },
+        {
+          "prop": "sampledAt",
+          "label": "时间"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "尾水监测",
+      "group": "物联中心",
+      "path": "/ent/iot/tailwater",
+      "shape": "crud",
+      "api": "/iot/telemetry?type=TAILWATER",
+      "columns": [
+        {
+          "prop": "deviceId",
+          "label": "设备"
+        },
+        {
+          "prop": "pointCode",
+          "label": "参数"
+        },
+        {
+          "prop": "value",
+          "label": "数值"
+        },
+        {
+          "prop": "collectedAt",
+          "label": "采集时间"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "气象监测",
+      "group": "物联中心",
+      "path": "/ent/iot/weather",
+      "shape": "crud",
+      "api": "/iot/weather",
+      "columns": [
+        {
+          "prop": "sampledAt",
+          "label": "时间"
+        },
+        {
+          "prop": "tempC",
+          "label": "温度"
+        },
+        {
+          "prop": "windDir",
+          "label": "风向"
+        },
+        {
+          "prop": "windLevel",
+          "label": "风力"
+        },
+        {
+          "prop": "humidity",
+          "label": "湿度"
+        },
+        {
+          "prop": "condition",
+          "label": "天气现象"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "设备预警",
+      "group": "物联中心",
+      "path": "/ent/iot/alarms",
+      "shape": "crud",
+      "api": "/iot/alarms",
+      "columns": [
+        {
+          "prop": "title",
+          "label": "标题"
+        },
+        {
+          "prop": "deviceNo",
+          "label": "编号"
+        },
+        {
+          "prop": "deviceType",
+          "label": "类型"
+        },
+        {
+          "prop": "content",
+          "label": "内容"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        },
+        {
+          "prop": "occurredAt",
+          "label": "发生时间"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "病害预警",
+      "group": "物联中心",
+      "path": "/ent/disease/alerts",
+      "shape": "crud",
+      "api": "/disease/alerts",
+      "columns": [
+        {
+          "prop": "species",
+          "label": "品种"
+        },
+        {
+          "prop": "diseaseName",
+          "label": "病名"
+        },
+        {
+          "prop": "pondName",
+          "label": "塘口"
+        },
+        {
+          "prop": "areaMu",
+          "label": "养殖面积（亩）"
+        },
+        {
+          "prop": "occurredAt",
+          "label": "发生时间"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "客户信息",
+      "group": "客户账本",
+      "path": "/ent/ledger/customers",
+      "shape": "crud",
+      "api": "/ledger/customers",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "contact",
+          "label": "联系人"
+        },
+        {
+          "prop": "phone",
+          "label": "电话"
+        },
+        {
+          "prop": "region",
+          "label": "区域"
+        },
+        {
+          "prop": "address",
+          "label": "地址"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "合同信息",
+      "group": "客户账本",
+      "path": "/ent/ledger/contracts",
+      "shape": "crud",
+      "api": "/ledger/contracts",
+      "columns": [
+        {
+          "prop": "customerName",
+          "label": "客户"
+        },
+        {
+          "prop": "species",
+          "label": "品种"
+        },
+        {
+          "prop": "qty",
+          "label": "数量"
+        },
+        {
+          "prop": "amount",
+          "label": "金额"
+        },
+        {
+          "prop": "paid",
+          "label": "已付"
+        },
+        {
+          "prop": "signDate",
+          "label": "日期"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "费用信息",
+      "group": "客户账本",
+      "path": "/ent/ledger/fees",
+      "shape": "crud",
+      "api": "/ledger/fees",
+      "columns": [
+        {
+          "prop": "customerName",
+          "label": "客户"
+        },
+        {
+          "prop": "contractCount",
+          "label": "合同数"
+        },
+        {
+          "prop": "totalAmount",
+          "label": "总金额"
+        },
+        {
+          "prop": "paid",
+          "label": "已付"
+        },
+        {
+          "prop": "feeStatus",
+          "label": "费用状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "购买历史",
+      "group": "客户账本",
+      "path": "/ent/ledger/purchase-history",
+      "shape": "crud",
+      "api": "/ledger/purchase-history",
+      "columns": [
+        {
+          "prop": "customerName",
+          "label": "客户"
+        },
+        {
+          "prop": "orderCount",
+          "label": "订单数"
+        },
+        {
+          "prop": "totalAmount",
+          "label": "总金额"
+        },
+        {
+          "prop": "lastOrderAt",
+          "label": "最近下单"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "客户画像",
+      "group": "客户账本",
+      "path": "/ent/ledger/portrait",
+      "shape": "crud",
+      "api": "/ledger/portrait",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "phone",
+          "label": "电话"
+        },
+        {
+          "prop": "orderCount",
+          "label": "订单数"
+        },
+        {
+          "prop": "totalAmount",
+          "label": "总金额"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "手工记账",
+      "group": "客户账本",
+      "path": "/ent/ledger/manual",
+      "shape": "crud",
+      "api": "/ledger/budgets",
+      "columns": [
+        {
+          "prop": "month",
+          "label": "月份"
+        },
+        {
+          "prop": "seed",
+          "label": "苗种"
+        },
+        {
+          "prop": "feed",
+          "label": "饲料"
+        },
+        {
+          "prop": "medicine",
+          "label": "渔药"
+        },
+        {
+          "prop": "rent",
+          "label": "租金"
+        },
+        {
+          "prop": "power",
+          "label": "用电"
+        },
+        {
+          "prop": "water",
+          "label": "用水"
+        },
+        {
+          "prop": "labor",
+          "label": "人工"
+        },
+        {
+          "prop": "other",
+          "label": "其他"
+        },
+        {
+          "prop": "total",
+          "label": "总预算"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "经营分析",
+      "group": "客户账本",
+      "path": "/ent/ledger/analysis",
+      "shape": "crud",
+      "api": "/ledger/analysis",
+      "columns": [
+        {
+          "prop": "month",
+          "label": "月份"
+        },
+        {
+          "prop": "income",
+          "label": "收入"
+        },
+        {
+          "prop": "cost",
+          "label": "成本"
+        },
+        {
+          "prop": "profit",
+          "label": "利润"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "售后服务",
+      "group": "客户账本",
+      "path": "/ent/ledger/after-sales",
+      "shape": "crud",
+      "api": "/ledger/after-sales",
+      "columns": [
+        {
+          "prop": "customerName",
+          "label": "客户"
+        },
+        {
+          "prop": "orderNo",
+          "label": "订单编号"
+        },
+        {
+          "prop": "feedbackType",
+          "label": "反馈类型"
+        },
+        {
+          "prop": "content",
+          "label": "内容"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        },
+        {
+          "prop": "handler",
+          "label": "处理人"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "仓库管理",
+      "group": "仓储经营",
+      "path": "/ent/wms/warehouses",
+      "shape": "crud",
+      "api": "/wms/warehouses",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "code",
+          "label": "编码"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "仓库设备",
+      "group": "仓储经营",
+      "path": "/ent/wms/equip",
+      "shape": "crud",
+      "api": "/wms/warehouse-equip",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "warehouseName",
+          "label": "仓库"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "仓库视频",
+      "group": "仓储经营",
+      "path": "/ent/wms/video",
+      "shape": "crud",
+      "api": "/iot/cameras?scene=WAREHOUSE",
+      "columns": [
+        {
+          "prop": "name",
+          "label": "名称"
+        },
+        {
+          "prop": "deviceSerial",
+          "label": "序列号"
+        },
+        {
+          "prop": "scene",
+          "label": "场景"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "饲料库存",
+      "group": "仓储经营",
+      "path": "/ent/wms/feed-stock",
+      "shape": "crud",
+      "api": "/wms/stocks?category=FEED",
+      "columns": [
+        {
+          "prop": "itemName",
+          "label": "品名"
+        },
+        {
+          "prop": "qty",
+          "label": "数量"
+        },
+        {
+          "prop": "unit",
+          "label": "单位"
+        },
+        {
+          "prop": "warehouseName",
+          "label": "仓库"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "入库记录",
+      "group": "仓储经营",
+      "path": "/ent/wms/feed-in",
+      "shape": "crud",
+      "api": "/wms/inbounds?category=FEED",
+      "columns": [
+        {
+          "prop": "itemName",
+          "label": "品名"
+        },
+        {
+          "prop": "qty",
+          "label": "数量"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        },
+        {
+          "prop": "source",
+          "label": "来源"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "出库记录",
+      "group": "仓储经营",
+      "path": "/ent/wms/feed-out",
+      "shape": "crud",
+      "api": "/wms/outbounds?category=FEED",
+      "columns": [
+        {
+          "prop": "itemName",
+          "label": "品名"
+        },
+        {
+          "prop": "qty",
+          "label": "数量"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "渔药库存",
+      "group": "仓储经营",
+      "path": "/ent/wms/med-stock",
+      "shape": "crud",
+      "api": "/wms/stocks?category=MEDICINE",
+      "columns": [
+        {
+          "prop": "itemName",
+          "label": "品名"
+        },
+        {
+          "prop": "qty",
+          "label": "数量"
+        },
+        {
+          "prop": "unit",
+          "label": "单位"
+        },
+        {
+          "prop": "warehouseName",
+          "label": "仓库"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "入库记录",
+      "group": "仓储经营",
+      "path": "/ent/wms/med-in",
+      "shape": "crud",
+      "api": "/wms/inbounds?category=MEDICINE",
+      "columns": [
+        {
+          "prop": "itemName",
+          "label": "品名"
+        },
+        {
+          "prop": "qty",
+          "label": "数量"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "出库记录",
+      "group": "仓储经营",
+      "path": "/ent/wms/med-out",
+      "shape": "crud",
+      "api": "/wms/outbounds?category=MEDICINE",
+      "columns": [
+        {
+          "prop": "itemName",
+          "label": "品名"
+        },
+        {
+          "prop": "qty",
+          "label": "数量"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "产品库存",
+      "group": "仓储经营",
+      "path": "/ent/wms/product-stock",
+      "shape": "crud",
+      "api": "/wms/stocks?category=PRODUCT",
+      "columns": [
+        {
+          "prop": "itemName",
+          "label": "品名"
+        },
+        {
+          "prop": "qty",
+          "label": "数量"
+        },
+        {
+          "prop": "unit",
+          "label": "单位"
+        },
+        {
+          "prop": "warehouseName",
+          "label": "仓库"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "入库记录",
+      "group": "仓储经营",
+      "path": "/ent/wms/product-in",
+      "shape": "crud",
+      "api": "/wms/inbounds?category=PRODUCT",
+      "columns": [
+        {
+          "prop": "itemName",
+          "label": "品名"
+        },
+        {
+          "prop": "qty",
+          "label": "数量"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        },
+        {
+          "prop": "source",
+          "label": "来源"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "出库记录",
+      "group": "仓储经营",
+      "path": "/ent/wms/product-out",
+      "shape": "crud",
+      "api": "/wms/outbounds?category=PRODUCT",
+      "columns": [
+        {
+          "prop": "itemName",
+          "label": "品名"
+        },
+        {
+          "prop": "qty",
+          "label": "数量"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "库存盘点",
+      "group": "仓储经营",
+      "path": "/ent/wms/stocktake",
+      "shape": "crud",
+      "api": "/wms/stocktakes",
+      "columns": [
+        {
+          "prop": "title",
+          "label": "标题"
+        },
+        {
+          "prop": "warehouseId",
+          "label": "仓库"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        },
+        {
+          "prop": "remark",
+          "label": "备注"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "销售管理",
+      "group": "流通加工",
+      "path": "/ent/circulation/sales",
+      "shape": "crud",
+      "api": "/circulation/sales-orders",
+      "columns": [
+        {
+          "prop": "orderNo",
+          "label": "订单编号"
+        },
+        {
+          "prop": "buyer",
+          "label": "买方"
+        },
+        {
+          "prop": "amount",
+          "label": "金额"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "产销对接",
+      "group": "流通加工",
+      "path": "/ent/circulation/match",
+      "shape": "crud",
+      "api": "/circulation/sales-orders",
+      "columns": [
+        {
+          "prop": "orderNo",
+          "label": "订单编号"
+        },
+        {
+          "prop": "buyer",
+          "label": "买方"
+        },
+        {
+          "prop": "amount",
+          "label": "金额"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "运输信息管理",
+      "group": "流通加工",
+      "path": "/ent/circulation/transports",
+      "shape": "crud",
+      "api": "/circulation/transports",
+      "columns": [
+        {
+          "prop": "plateNo",
+          "label": "车牌"
+        },
+        {
+          "prop": "fromAddr",
+          "label": "起运地"
+        },
+        {
+          "prop": "toAddr",
+          "label": "目的地"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "加工信息管理",
+      "group": "流通加工",
+      "path": "/ent/circulation/processing",
+      "shape": "crud",
+      "api": "/specialty/processing",
+      "columns": [
+        {
+          "prop": "materialNo",
+          "label": "原料编号"
+        },
+        {
+          "prop": "pondName",
+          "label": "塘口"
+        },
+        {
+          "prop": "weightKg",
+          "label": "数量kg"
+        },
+        {
+          "prop": "quarantineStatus",
+          "label": "检疫状态"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    },
+    {
+      "portal": "ENT",
+      "name": "标签打印信息",
+      "group": "流通加工",
+      "path": "/ent/circulation/labels",
+      "shape": "crud",
+      "api": "/trace/codes",
+      "columns": [
+        {
+          "prop": "code",
+          "label": "编码"
+        },
+        {
+          "prop": "enterpriseId",
+          "label": "主体ID"
+        },
+        {
+          "prop": "status",
+          "label": "状态"
+        },
+        {
+          "prop": "boundAt",
+          "label": "绑定时间"
+        }
+      ],
+      "buttons": [
+        "query",
+        "reset",
+        "create",
+        "import",
+        "export",
+        "batchDelete"
+      ],
+      "ssoUrl": null,
+      "status": "ok"
+    }
+  ]
+}

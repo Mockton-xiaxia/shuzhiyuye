@@ -1,0 +1,5 @@
+Package: shuzhi-fishery-platform
+Built: 2026-07-26T02:55:46.025112
+Files: 388
+Size: 62.77 MB
+Path: D:\ai\domo\yuye\github-release\shuzhi-fishery-platform

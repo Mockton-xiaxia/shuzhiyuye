@@ -1,0 +1,222 @@
+{
+  "towns": [
+    {
+      "name": "北山街道",
+      "count": 15,
+      "areaMu": 8534.55,
+      "pondCount": 42,
+      "lon": 120.147376,
+      "lat": 30.272934,
+      "villages": [
+        {"name": "示范社区", "count": 5, "areaMu": 2100, "pondCount": 12, "lon": 120.142, "lat": 30.276},
+        {"name": "保俶社区", "count": 5, "areaMu": 1800, "pondCount": 10, "lon": 120.152, "lat": 30.268},
+        {"name": "宝石社区", "count": 5, "areaMu": 4634.55, "pondCount": 20, "lon": 120.148, "lat": 30.278}
+      ]
+    },
+    {
+      "name": "西溪街道",
+      "count": 4,
+      "areaMu": 6210.2,
+      "pondCount": 18,
+      "lon": 120.095,
+      "lat": 30.268,
+      "villages": [
+        {"name": "西溪社区", "count": 4, "areaMu": 6210.2, "pondCount": 18, "lon": 120.092, "lat": 30.272}
+      ]
+    },
+    {
+      "name": "三墩镇",
+      "count": 38,
+      "areaMu": 4980.0,
+      "pondCount": 56,
+      "lon": 120.078,
+      "lat": 30.332,
+      "villages": [
+        {"name": "三墩社区", "count": 15, "areaMu": 2100, "pondCount": 22, "lon": 120.082, "lat": 30.328},
+        {"name": "双桥社区", "count": 12, "areaMu": 1680, "pondCount": 18, "lon": 120.072, "lat": 30.336},
+        {"name": "虾龙圩社区", "count": 11, "areaMu": 1200, "pondCount": 16, "lon": 120.088, "lat": 30.324}
+      ]
+    },
+    {
+      "name": "转塘街道",
+      "count": 8,
+      "areaMu": 3720.5,
+      "pondCount": 32,
+      "lon": 120.088,
+      "lat": 30.158,
+      "villages": [
+        {"name": "转塘社区", "count": 4, "areaMu": 2000, "pondCount": 16, "lon": 120.092, "lat": 30.162},
+        {"name": "之江社区", "count": 4, "areaMu": 1720.5, "pondCount": 16, "lon": 120.084, "lat": 30.154}
+      ]
+    },
+    {
+      "name": "留下街道",
+      "count": 6,
+      "areaMu": 2860.0,
+      "pondCount": 28,
+      "lon": 120.048,
+      "lat": 30.238,
+      "villages": [
+        {"name": "留下社区", "count": 3, "areaMu": 1500, "pondCount": 14, "lon": 120.052, "lat": 30.242},
+        {"name": "东岳社区", "count": 3, "areaMu": 1360, "pondCount": 14, "lon": 120.044, "lat": 30.234}
+      ]
+    },
+    {
+      "name": "灵隐街道",
+      "count": 12,
+      "areaMu": 2140.8,
+      "pondCount": 24,
+      "lon": 120.101,
+      "lat": 30.247,
+      "villages": [
+        {"name": "灵隐社区", "count": 6, "areaMu": 1100, "pondCount": 12, "lon": 120.098, "lat": 30.251},
+        {"name": "茅家埠社区", "count": 6, "areaMu": 1040.8, "pondCount": 12, "lon": 120.106, "lat": 30.243}
+      ]
+    },
+    {
+      "name": "蒋村街道",
+      "count": 8,
+      "areaMu": 1680.0,
+      "pondCount": 20,
+      "lon": 120.085,
+      "lat": 30.292,
+      "villages": [
+        {"name": "蒋村社区", "count": 4, "areaMu": 880, "pondCount": 10, "lon": 120.089, "lat": 30.296},
+        {"name": "西溪花园社区", "count": 4, "areaMu": 800, "pondCount": 10, "lon": 120.081, "lat": 30.288}
+      ]
+    },
+    {
+      "name": "双浦镇",
+      "count": 1,
+      "areaMu": 980.4,
+      "pondCount": 8,
+      "lon": 120.055,
+      "lat": 30.128,
+      "villages": [
+        {"name": "双浦社区", "count": 1, "areaMu": 980.4, "pondCount": 8, "lon": 120.059, "lat": 30.132}
+      ]
+    },
+    {
+      "name": "翠苑街道",
+      "count": 5,
+      "areaMu": 1560.0,
+      "pondCount": 24,
+      "lon": 120.128,
+      "lat": 30.287,
+      "villages": [
+        {"name": "翠苑社区", "count": 3, "areaMu": 900, "pondCount": 14, "lon": 120.124, "lat": 30.291},
+        {"name": "古翠社区", "count": 2, "areaMu": 660, "pondCount": 10, "lon": 120.132, "lat": 30.283}
+      ]
+    },
+    {
+      "name": "文新街道",
+      "count": 3,
+      "areaMu": 1180.0,
+      "pondCount": 14,
+      "lon": 120.105,
+      "lat": 30.295,
+      "villages": [
+        {"name": "文新社区", "count": 2, "areaMu": 700, "pondCount": 8, "lon": 120.109, "lat": 30.299},
+        {"name": "竞舟社区", "count": 1, "areaMu": 480, "pondCount": 6, "lon": 120.101, "lat": 30.291}
+      ]
+    }
+  ],
+  "speciesRank": [
+    {"name": "北山街道", "value": 8534.55},
+    {"name": "西溪街道", "value": 6210.2},
+    {"name": "三墩镇", "value": 4980.0},
+    {"name": "转塘街道", "value": 3720.5},
+    {"name": "留下街道", "value": 2860.0},
+    {"name": "灵隐街道", "value": 2140.8},
+    {"name": "蒋村街道", "value": 1680.0},
+    {"name": "双浦镇", "value": 980.4},
+    {"name": "翠苑街道", "value": 1560.0}
+  ],
+  "seedlings": [
+    {"name": "北山街道", "value": 380},
+    {"name": "三墩镇", "value": 320},
+    {"name": "转塘街道", "value": 350},
+    {"name": "留下街道", "value": 390},
+    {"name": "翠苑街道", "value": 280},
+    {"name": "蒋村街道", "value": 250},
+    {"name": "文新街道", "value": 220},
+    {"name": "灵隐街道", "value": 180},
+    {"name": "双浦镇", "value": 120},
+    {"name": "西溪街道", "value": 150}
+  ],
+  "speciesRankLine": [1020, 780, 620, 460, 350, 260, 200, 120, 95, 80],
+  "speciesRankDetail": {
+    "北山街道": [
+      {"name": "草鱼", "value": 217.0},
+      {"name": "鲢鱼", "value": 208.25},
+      {"name": "鳙鱼", "value": 150.0},
+      {"name": "鲤鱼", "value": 120.0},
+      {"name": "鲫鱼", "value": 98.0},
+      {"name": "大鲵", "value": 95.0}
+    ],
+    "西溪街道": [
+      {"name": "草鱼", "value": 160},
+      {"name": "鲢鱼", "value": 140},
+      {"name": "鲤鱼", "value": 110},
+      {"name": "大鲵", "value": 98},
+      {"name": "鲫鱼", "value": 73}
+    ],
+    "三墩镇": [
+      {"name": "草鱼", "value": 150},
+      {"name": "鲢鱼", "value": 120},
+      {"name": "鳙鱼", "value": 90},
+      {"name": "大鲵", "value": 78},
+      {"name": "鲤鱼", "value": 60}
+    ],
+    "转塘街道": [
+      {"name": "草鱼", "value": 110},
+      {"name": "鲢鱼", "value": 90},
+      {"name": "大鲵", "value": 72},
+      {"name": "鲤鱼", "value": 60},
+      {"name": "鲫鱼", "value": 40}
+    ],
+    "留下街道": [
+      {"name": "草鱼", "value": 90},
+      {"name": "鲢鱼", "value": 70},
+      {"name": "大鲵", "value": 56},
+      {"name": "鲤鱼", "value": 40},
+      {"name": "鲫鱼", "value": 30}
+    ],
+    "灵隐街道": [
+      {"name": "草鱼", "value": 70},
+      {"name": "鲢鱼", "value": 52},
+      {"name": "大鲵", "value": 42},
+      {"name": "鲤鱼", "value": 30},
+      {"name": "鲫鱼", "value": 20}
+    ],
+    "蒋村街道": [
+      {"name": "草鱼", "value": 56},
+      {"name": "鲢鱼", "value": 40},
+      {"name": "大鲵", "value": 32},
+      {"name": "鲤鱼", "value": 24},
+      {"name": "鲫鱼", "value": 16}
+    ],
+    "双浦镇": [
+      {"name": "草鱼", "value": 42},
+      {"name": "鲢鱼", "value": 32},
+      {"name": "大鲵", "value": 28},
+      {"name": "鲤鱼", "value": 18},
+      {"name": "鲫鱼", "value": 12}
+    ],
+    "翠苑街道": [
+      {"name": "草鱼", "value": 68},
+      {"name": "鲢鱼", "value": 52},
+      {"name": "大鲵", "value": 45},
+      {"name": "鲤鱼", "value": 38},
+      {"name": "鲫鱼", "value": 28},
+      {"name": "黄颡鱼", "value": 22}
+    ],
+    "文新街道": [
+      {"name": "草鱼", "value": 48},
+      {"name": "鲢鱼", "value": 36},
+      {"name": "大鲵", "value": 30},
+      {"name": "鲤鱼", "value": 22},
+      {"name": "鲫鱼", "value": 14}
+    ]
+  }
+}

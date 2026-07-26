@@ -1,0 +1,56 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "导入示例-养殖区A",
+        "layerType": "AQUACULTURE",
+        "species": "草鱼",
+        "township": "北山街道"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [120.150, 30.243],
+            [120.152, 30.243],
+            [120.152, 30.245],
+            [120.150, 30.245],
+            [120.150, 30.243]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "导入示例-尾水区B",
+        "layerType": "EFFLUENT"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [120.153, 30.243],
+            [120.155, 30.243],
+            [120.155, 30.245],
+            [120.153, 30.245],
+            [120.153, 30.243]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "导入示例-出水口C",
+        "layerType": "OUTLET"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.151, 30.244]
+      }
+    }
+  ]
+}
